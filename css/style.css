@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.d-none{
+    display: none;
+}
+
+#input{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#input>*{
+    width: 50px;
+}
+#message{
+    position:absolute;
+    left: 50%;
+}
+
+#message>*{
+    position:relative;
+    bottom: 15px;
+}
+
+.arale_arriva{
+    background-image: url(https://uozzart.com/wp-content/uploads/2021/03/dr-slump-e-arale-serie-tv-anime-07.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.arale_gioca{
+    background-image: url(https://www.meteoweek.com/wp-content/uploads/2020/02/arale-meteoweek.com_.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#message{
+    height:300px;
+    width: 340px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Speech_balloon.svg/593px-Speech_balloon.svg.png);
+    background-position: center;
+    background-size: cover;
+}
