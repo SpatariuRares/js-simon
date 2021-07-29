@@ -43,7 +43,7 @@ function prendidati(){
     }else{
         document.getElementById("message").innerHTML="<h1>o no hai <br>indovinato solo<br>"+contatore+"<br>"+ci_sono+" </h1>";
     }
-    console.log(contatore,ci_sono);
+    document.getElementById("input").classList+= " d-none";
 }
 
 function start(){
@@ -55,7 +55,7 @@ function start(){
     },1000)
     setTimeout(function(){
         document.getElementById("message").innerHTML="<h1>"+numeri+ "</h1>";
-        setTimeout(quant,3000);
+        setTimeout(quant,30000);
     },3000);
 }
 
