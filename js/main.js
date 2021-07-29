@@ -7,8 +7,11 @@
  *!dice quanti e quali dei numeri da indovinare sono stati 
  *!individuati.
  */
+
+window.addEventListener("load", initAudioPlayer);
 let numeri = [];
 let contatore=0;
+var audio;
 for (let i = 0; i <5;i++){
     let num=0;
     do{
@@ -28,6 +31,14 @@ setTimeout(quant,3000);
 setTimeout(start,2000);
 
 
+function initAudioPlayer(){
+    audio = new Audio();
+    audio.src = "./music/Dr. Slump Arale - Opening - Japanese- Arele Norimaki.mp3";
+    audio.loop = true;
+    audio.volume = 0.05;
+    audio.play();
+}
+//non funziona su chrome hanno una politica che inpedisce autoplay
 function prendidati(){
     let num=document.getElementById('input').getElementsByClassName("numero");
     let ci_sono=[];
